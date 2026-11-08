@@ -64,8 +64,8 @@ class BlockedError(Exception):
 def blocked_message(failures: int) -> str:
     """Plain-English explanation shown when the safety stop triggers."""
     return (
-        f"Instagram refused {failures} requests in a row (rate limit, login wall or "
-        "challenge page). The tool stopped so it doesn't make things worse. "
+        f"{failures} requests in a row failed (rate limit, login wall, challenge page "
+        "or network error). The tool stopped so it doesn't make things worse. "
         "Wait a few hours, ideally until tomorrow, before running it again. "
         "Everything checked so far is saved, and rerunning the same command picks "
         "up where it left off."
