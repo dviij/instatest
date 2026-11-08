@@ -1,0 +1,31 @@
+# Generic brand-style fragments (3-4 letters), one per line, lowercase.
+# Used by `--mode words` and by the ranker's "brand-style fragment" bonus.
+aero
+axo
+dex
+duo
+eco
+evo
+geo
+glo
+kin
+lux
+meta
+neo
+nex
+nix
+omni
+pix
+rad
+sol
+tek
+uno
+vox
+wiz
+zed
+zyra
+vexo
+nuvo
+lumo
+kova
+zeno

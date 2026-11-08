@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Local run data
+*.db
+*.db-journal
+candidates.txt
+results.csv
+ranked.csv
+*_rechecked.csv
