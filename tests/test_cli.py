@@ -104,7 +104,8 @@ def test_check_stops_when_blocked(tmp_path: Path, monkeypatch: pytest.MonkeyPatc
     )
     assert result.exit_code == cli.EXIT_BLOCKED
     assert len(requested) == 3  # three tries on the first name, then stop
-    assert "Wait a few hours" in result.output
+    flat = " ".join(result.output.replace("│", " ").split())  # ignore panel line wrapping
+    assert "Wait a few hours" in flat
     assert (tmp_path / "o.csv").exists()  # partial results still exported
 
 
